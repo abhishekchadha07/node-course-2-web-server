@@ -59,7 +59,11 @@ app.get('/about',(req,res)=>{
   })
   //res.send('About Page')
 })
-
+app.get('/portfolio',(req,res)=>{
+  res.render('portfolio.hbs',{
+    pageTitle:'THis is portfolio'
+  })
+})
 app.get('/bad',(req,res)=>{
   res.send({
     Errormsg:'Unable to fullfil request'
